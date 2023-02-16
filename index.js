@@ -1,13 +1,9 @@
 const dayjs = require('dayjs');
 
-// const utc = require('dayjs/plugin/utc')
-// const timezone = require('dayjs/plugin/timezone')
-// dayjs.extend(utc);
-// dayjs.extend(timezone);
 
-// let timestamp = dayjs.utc("2014-06-01 12:00", "America/New_York"); 
-// timestamp = dayjs("2014-06-01 12:00").tz("America/New_York");
-
-// console.log(timestamp);
-
-dayjs('2019-01-25').format('DD/MM/YYYY')
+const date1 = dayjs('2023-02-15').format('MMM/DD/YY'); 
+// date one with format option 1
+const date2 = dayjs('2023-12-155:20:59').format('MMMM-DD-YYYY h:mm:ss');
+// date two with format option 2
+console.log(date1);
+console.log(date2);
